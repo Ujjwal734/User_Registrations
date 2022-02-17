@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using User_Registrations;
+Console.WriteLine("Hello, Welcome to User Registration Programe!");
+UserRegistration userregistration = new UserRegistration();
+userregistration.FirstName();
