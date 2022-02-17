@@ -33,5 +33,13 @@ namespace User_Registrations
             Regex rg = new Regex(mail);
             Console.WriteLine(rg.IsMatch(instr));
         }
+        public void MobileNum()
+        {
+            Console.WriteLine("Enter your Moblie Number :- ");
+            string instr = Console.ReadLine();
+            const string contact = @"^[0-9]{2}[ ]{1}[6-9]{1}[0-9]{9}$"; ;
+            Regex rg = new Regex(contact);
+            Console.WriteLine(rg.IsMatch(instr));
+        }
     }
 }
