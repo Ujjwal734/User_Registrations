@@ -25,5 +25,13 @@ namespace User_Registrations
             Regex rg = new Regex(name);
             Console.WriteLine(rg.IsMatch(instr));
         }
+        public void Email()
+        {
+            Console.WriteLine("Enter your Email Address :- ");
+            string instr = Console.ReadLine();
+            const string mail = @"^[a-zA-Z0-9.]+@[A-Za-z0-9]+.[A-Za-z]{2,4}$"; ;
+            Regex rg = new Regex(mail);
+            Console.WriteLine(rg.IsMatch(instr));
+        }
     }
 }
