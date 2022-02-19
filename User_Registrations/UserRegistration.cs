@@ -41,5 +41,13 @@ namespace User_Registrations
             Regex rg = new Regex(contact);
             Console.WriteLine(rg.IsMatch(instr));
         }
+        public void Password()
+        {
+            Console.WriteLine("Enter your Password :- ");
+            string instr = Console.ReadLine();
+            const string passwords = @"^[a-zA-Z0-9#@$?]{8,}$"; ;
+            Regex rg = new Regex(passwords);
+            Console.WriteLine(rg.IsMatch(instr));
+        }
     }
 }

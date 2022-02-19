@@ -1,7 +1,7 @@
 ﻿using User_Registrations;
 Console.WriteLine("Hello, Welcome to User Registration Programe!");
 Console.WriteLine("Choose Option what you want to validate :- ");
-Console.WriteLine("1. First Name \n2.Last Name \n3. Email \n4. Mobile Number");
+Console.WriteLine("1. First Name \n2.Last Name \n3. Email \n4. Mobile Number \n5. Password");
 UserRegistration userregistration = new UserRegistration();
 int option = Convert.ToInt32(Console.ReadLine());
 switch(option)
@@ -17,6 +17,9 @@ switch(option)
         break;
     case 4:
         userregistration.MobileNum();
+        break;
+    case 5:
+        userregistration.Password();
         break;
     default:
         Console.WriteLine("Choose From available Option :) ");
