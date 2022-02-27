@@ -1,7 +1,7 @@
 ﻿using User_Registrations;
 Console.WriteLine("Hello, Welcome to User Registration Programe!");
 Console.WriteLine("Choose Option what you want to validate :- ");
-Console.WriteLine("1. First Name \n2.Last Name \n3. Email \n4. Mobile Number \n5. Password");
+/*Console.WriteLine("1. First Name \n2.Last Name \n3. Email \n4. Mobile Number \n5. Password");
 UserRegistration userregistration = new UserRegistration();
 int option = Convert.ToInt32(Console.ReadLine());
 switch(option)
@@ -24,7 +24,7 @@ switch(option)
     default:
         Console.WriteLine("Choose From available Option :) ");
         break;
-}
+}*/
 Console.WriteLine("Choose Option what you want to validate Using Reflaction:- ");
 Console.WriteLine("1. Validate First Name \n2. Validate Last Name \n3. Validate Email \n4. Validate Mobile Number \n5. Validate Password");
 ValidReflction reflction = new ValidReflction();

@@ -9,13 +9,30 @@ namespace User_Registrations
 {
     public class ValidReflction
     {
-
         public static string FirsName = "^[A-Z]{1}[a-zA-Z0-9]{2,29}$";
         public static string LastName = "^[A-Z]{1}[a-zA-Z0-9]{2,29}$";
         public static string regex_email = "^[a-z0-9]+(.[a-z0-9]+)?@[a-z]+[.][a-z]{2,3}(.[a-z]{2})?$";
         public static string regex_mobile = "^[1-9][0-9]{1,2}[ ][0-9]{10}$";
 
         public static string regex_passwordRule1 = "^[a-zA-Z0-9]{8,}$";
+        public static string ValidatePattern(string userInput, string pattern)
+        {
+            try
+            {
+                if (Regex.IsMatch(userInput, pattern))
+                {
+                    return "true";
+                }
+                else
+                {
+                    throw new UserRegistrationException(UserRegistrationException.ExceptionType.EXCEPTION, "false");
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+        }
 
         public bool ValidateFirstName(string uName)
         {
